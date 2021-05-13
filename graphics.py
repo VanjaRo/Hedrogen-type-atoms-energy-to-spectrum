@@ -11,20 +11,20 @@ image = Image.new("RGB", (width, height))
 draw = ImageDraw.Draw(image)
 
 
-for i in range(1000):
-    x = int(i)
-    draw.line((x, 0, x, height), fill=wl_to_rgb(i))
+# for i in get_vector_wave_hydrogen(2, 8):
+#     x = int(i)
+#     draw.line((x, 0, x, height), fill=wl_to_rgb(i))
 
-for i in get_vector_wave_lithium(1, 8):
-    x = int(i)
-    print(i)
-    draw.line((x, 0, x, height), fill=(255, 255, 255))
-
-
-# for i in get_vector_wave_lithium(1, 8):
+# for i in get_vector_wave_hydrogen(2, 8):
 #     x = int(i)
 #     print(i)
-#     draw.line((x, 0, x, height), fill=wl_to_rgb(i))
+#     draw.line((x, 0, x, height), fill=(255, 255, 255))
+
+
+for i in get_vector_wave_lithium(3, 10):
+    x = int(i)
+    print(i)
+    draw.line((x, 0, x, height), fill=wl_to_rgb(i))
 
     # for i in get_vector_wave_lithium(2, 18):
     #     x = int(i)

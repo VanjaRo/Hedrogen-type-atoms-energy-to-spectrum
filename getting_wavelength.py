@@ -32,6 +32,7 @@ def get_reduce_mass_lithium():
 
 def get_vector_wave_hydrogen(ni, nj):
     vector = []
+    nj += 1
     for i in range(ni + 1, nj):
         vector.append(get_wave(ni, i, get_reduce_mass_hydrogen(), 1))
     return vector
@@ -39,6 +40,7 @@ def get_vector_wave_hydrogen(ni, nj):
 
 def get_vector_wave_helium(ni, nj):
     vector = []
+    nj += 1
     for i in range(ni + 1, nj):
         vector.append(get_wave(ni, i, get_reduce_mass_helium(), 2))
     return vector
@@ -46,6 +48,7 @@ def get_vector_wave_helium(ni, nj):
 
 def get_vector_wave_lithium(ni, nj):
     vector = []
+    nj += 1
     for i in range(ni + 1, nj):
         vector.append(get_wave(ni, i, get_reduce_mass_lithium(), 3))
     return vector

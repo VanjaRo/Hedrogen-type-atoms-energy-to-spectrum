@@ -27,9 +27,9 @@ def wavelength_to_rgb(wavelength, gamma=0.8):
         G = 0.0
         B = 0.0
     else:
-        R = 0.0
-        G = 0.0
-        B = 0.0
+        R = 1
+        G = 1
+        B = 1
     R *= 255
     G *= 255
     B *= 255
